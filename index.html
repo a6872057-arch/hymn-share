@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#1e5645">
-  <meta property="og:title" content="第 111 首《永遠的靠岸》琴箏合奏試聽 · 詩歌本 App">
-  <meta property="og:description" content="包含 E 調、D 調、G 調三種調性線上試聽比較，並提供最新版「我的詩歌本」Android App 下載安裝。">
+  <meta property="og:title" content="第 111 首《永遠的靠岸》琴箏合奏試聽與 MP3 下載">
+  <meta property="og:description" content="包含 降B大調、E 調、D 調、G 調琴箏合奏線上試聽與 MP3 下載，並提供最新版「我的詩歌本」Android App 安裝檔。">
   <meta property="og:type" content="website">
   <meta name="robots" content="noindex, nofollow">
-  <title>第 111 首《永遠的靠岸》調性試聽 · 詩歌本 App 下載</title>
+  <title>第 111 首《永遠的靠岸》調性試聽 · MP3 下載 · 詩歌本 App</title>
   <style>
     :root {
       --bg: #f8f6f0;
@@ -47,7 +47,7 @@
     .header {
       background: linear-gradient(180deg, #1e5645 0%, #286553 100%);
       color: #fff;
-      padding: 32px 20px 28px;
+      padding: 30px 20px 26px;
       text-align: center;
       border-bottom-left-radius: 28px;
       border-bottom-right-radius: 28px;
@@ -65,13 +65,13 @@
       letter-spacing: 0.05em;
     }
     .header h1 {
-      font-size: 25px;
+      font-size: 24px;
       font-weight: 800;
       letter-spacing: 0.02em;
       margin-bottom: 8px;
     }
     .header p {
-      font-size: 15px;
+      font-size: 14.5px;
       color: #d8e8e0;
       max-width: 440px;
       margin: 0 auto;
@@ -85,7 +85,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 19px;
+      font-size: 18px;
       font-weight: 800;
       color: var(--primary);
       margin: 22px 4px 14px;
@@ -94,25 +94,25 @@
     .card {
       background: var(--card-bg);
       border: 1.5px solid var(--border);
-      border-radius: 20px;
-      padding: 20px;
-      margin-bottom: 16px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
       transition: all 0.25s ease;
     }
     .card.highlight {
-      border-color: #388e3c;
-      background: #fcfdfc;
-      box-shadow: 0 6px 20px rgba(56, 142, 60, 0.12);
+      border-color: #2e7d32;
+      background: #fbfdfb;
+      box-shadow: 0 6px 18px rgba(46, 125, 50, 0.10);
     }
     .card-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .card-title {
-      font-size: 18px;
+      font-size: 17.5px;
       font-weight: 750;
       color: #17382d;
       display: flex;
@@ -120,75 +120,97 @@
       gap: 8px;
     }
     .tag {
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 700;
       padding: 3px 8px;
       border-radius: 6px;
     }
-    .tag-recommend { background: #e6f4ea; color: #137333; }
-    .tag-bass { background: #fef7e0; color: #b06000; }
-    .tag-orig { background: #e3ebf3; color: #1d456b; }
+    .tag-bb { background: #e8f0fe; color: #1967d2; }
+    .tag-e { background: #e6f4ea; color: #137333; }
+    .tag-d { background: #fef7e0; color: #b06000; }
+    .tag-orig { background: #f1f3f4; color: #5f6368; }
     .card-desc {
-      font-size: 14px;
+      font-size: 13.5px;
       color: var(--muted);
-      margin-bottom: 14px;
-      line-height: 1.55;
+      margin-bottom: 12px;
+      line-height: 1.5;
     }
     audio {
       width: 100%;
-      height: 42px;
+      height: 40px;
       border-radius: 8px;
       outline: none;
+    }
+    .track-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+    }
+    .dl-mp3-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 6px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .dl-mp3-btn:hover, .dl-mp3-btn:active {
+      background: #d4e7de;
     }
     /* App Download Section */
     .app-card {
       background: #ffffff;
       border: 2px solid #2e7d32;
-      border-radius: 22px;
-      padding: 24px 20px;
-      box-shadow: 0 8px 26px rgba(46, 125, 50, 0.12);
+      border-radius: 20px;
+      padding: 22px 18px;
+      box-shadow: 0 8px 24px rgba(46, 125, 50, 0.12);
       text-align: center;
       margin-top: 10px;
     }
     .app-icon {
-      width: 64px;
-      height: 64px;
+      width: 60px;
+      height: 60px;
       background: #1e5645;
       color: #fff;
-      font-size: 32px;
+      font-size: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 18px;
-      margin: 0 auto 12px;
+      border-radius: 16px;
+      margin: 0 auto 10px;
       box-shadow: 0 4px 12px rgba(30, 86, 69, 0.25);
     }
     .app-title {
-      font-size: 21px;
+      font-size: 20px;
       font-weight: 800;
       color: #17382d;
       margin-bottom: 4px;
     }
     .app-meta {
-      font-size: 13.5px;
+      font-size: 13px;
       color: var(--muted);
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
     .features-list {
       text-align: left;
       background: #f7faf8;
       border-radius: 12px;
-      padding: 14px 16px;
-      margin-bottom: 20px;
-      font-size: 13.5px;
+      padding: 12px 16px;
+      margin-bottom: 18px;
+      font-size: 13px;
       color: #2e4a3d;
       line-height: 1.7;
     }
     .features-list li {
       list-style-type: none;
       position: relative;
-      padding-left: 20px;
-      margin-bottom: 4px;
+      padding-left: 18px;
+      margin-bottom: 3px;
     }
     .features-list li::before {
       content: "✔";
@@ -203,10 +225,10 @@
       background: #2e7d32;
       color: #fff;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 17.5px;
       font-weight: 750;
-      padding: 16px 20px;
-      border-radius: 16px;
+      padding: 15px 18px;
+      border-radius: 14px;
       box-shadow: 0 6px 18px rgba(46, 125, 50, 0.28);
       transition: all 0.2s;
     }
@@ -234,12 +256,12 @@
       font-size: 15px;
       font-weight: 700;
       color: var(--primary);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .share-desc {
       font-size: 13px;
       color: var(--muted);
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
     .copy-btn {
       background: #fff;
@@ -247,7 +269,7 @@
       color: var(--primary);
       font-size: 15px;
       font-weight: 700;
-      padding: 11px 20px;
+      padding: 11px 18px;
       border-radius: 12px;
       cursor: pointer;
       width: 100%;
@@ -273,8 +295,8 @@
     }
     footer {
       text-align: center;
-      margin-top: 36px;
-      font-size: 12.5px;
+      margin-top: 32px;
+      font-size: 12px;
       color: #8c9e94;
     }
   </style>
@@ -283,13 +305,13 @@
 
   <!-- LINE in-app browser alert -->
   <div id="lineBanner" class="line-banner">
-    👉 <strong>LINE 提示：</strong>若點擊下載安裝檔沒有反應，請點擊右上角<strong>「︙」</strong>選<strong>「以預設瀏覽器開啟」</strong>（Chrome）即可直接下載安裝！
+    👉 <strong>LINE 提示：</strong>若點擊下載安裝檔沒有反應，請點右上角<strong>「︙」</strong>選<strong>「以預設瀏覽器開啟」</strong>（Chrome）即可直接下載安裝！
   </div>
 
   <header class="header">
     <div class="badge">台語詩歌分享平台</div>
     <h1>第 111 首《永遠的靠岸》</h1>
-    <p>琴箏合奏編曲 · 調性試聽與 App 安裝檔</p>
+    <p>琴箏合奏編曲 · 調性試聽與 MP3 / App 下載</p>
   </header>
 
   <div class="container">
@@ -297,19 +319,52 @@
     <!-- 試聽段落 -->
     <div class="section-title">
       <span class="icon">🎹</span>
-      <h2>琴箏合奏 · 三種調性試聽</h2>
+      <h2>琴箏合奏 · 多種調性試聽</h2>
     </div>
 
-    <!-- Track: E 調 -->
+    <!-- Track: 降 B 大調 (標準) -->
     <div class="card highlight">
       <div class="card-top">
         <div class="card-title">
-          <span>✨ E 調（降 3 半音）</span>
-          <span class="tag tag-recommend">推薦 · 溫潤抒情</span>
+          <span>🌟 降B大調 (Bb)</span>
+          <span class="tag tag-bb">最新指定 · 華美明朗</span>
         </div>
       </div>
-      <p class="card-desc">比原調降小三度，音域適中極好開口，古箏低音與鋼琴和聲更加溫暖深情，最適合會眾齊唱。</p>
+      <p class="card-desc">比 G 調升小三度，音域明快開揚，古箏高音清越悠揚，鋼琴和聲輝煌大器。</p>
+      <audio controls preload="metadata" src="111_Bb.mp3"></audio>
+      <div class="track-actions">
+        <a class="dl-mp3-btn" href="111_Bb.mp3" download="111_永遠的靠岸_琴箏合奏_降B大調.mp3">⬇ 下載此調 MP3</a>
+      </div>
+    </div>
+
+    <!-- Track: 降 B 大調 (低音舒適版) -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">
+          <span>🍂 降B大調 (低音沈穩版)</span>
+          <span class="tag tag-bb">男聲極佳 · 降九度</span>
+        </div>
+      </div>
+      <p class="card-desc">比原調降九度，音調溫柔沈靜、古箏低沉厚實，完全不費力即可自在跟唱。</p>
+      <audio controls preload="metadata" src="111_Bb_low.mp3"></audio>
+      <div class="track-actions">
+        <a class="dl-mp3-btn" href="111_Bb_low.mp3" download="111_永遠的靠岸_琴箏合奏_降B大調_低音版.mp3">⬇ 下載此調 MP3</a>
+      </div>
+    </div>
+
+    <!-- Track: E 調 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">
+          <span>✨ E 調（降 3 半音）</span>
+          <span class="tag tag-e">溫潤抒情 · 最適會眾</span>
+        </div>
+      </div>
+      <p class="card-desc">比原調降小三度，音域適中極好開口，古箏低音與鋼琴和聲更加溫暖深情。</p>
       <audio controls preload="metadata" src="111_E.mp3"></audio>
+      <div class="track-actions">
+        <a class="dl-mp3-btn" href="111_E.mp3" download="111_永遠的靠岸_琴箏合奏_E調.mp3">⬇ 下載此調 MP3</a>
+      </div>
     </div>
 
     <!-- Track: D 調 -->
@@ -317,11 +372,14 @@
       <div class="card-top">
         <div class="card-title">
           <span>🎵 D 調（降 5 半音）</span>
-          <span class="tag tag-bass">厚實低音 · 男聲舒適</span>
+          <span class="tag tag-d">厚實低音 · 沉穩悠遠</span>
         </div>
       </div>
-      <p class="card-desc">比原調降純四度，音調沉穩厚實，共鳴更加深邃悠遠，男聲或中低音演唱完全不吃力。</p>
+      <p class="card-desc">比原調降純四度，音調沉穩厚實，共鳴更加深邃悠遠，男聲演唱舒適。</p>
       <audio controls preload="metadata" src="111_D.mp3"></audio>
+      <div class="track-actions">
+        <a class="dl-mp3-btn" href="111_D.mp3" download="111_永遠的靠岸_琴箏合奏_D調.mp3">⬇ 下載此調 MP3</a>
+      </div>
     </div>
 
     <!-- Track: G 調 (原調) -->
@@ -332,12 +390,15 @@
           <span class="tag tag-orig">簡譜標準調</span>
         </div>
       </div>
-      <p class="card-desc">簡譜原版標準音高，音色清亮明朗，音域較高，適合女高音或清澈唱腔演繹。</p>
+      <p class="card-desc">簡譜原版標準音高，音色清亮明朗，音域較高，女高音演繹適合。</p>
       <audio controls preload="metadata" src="111_G.mp3"></audio>
+      <div class="track-actions">
+        <a class="dl-mp3-btn" href="111_G.mp3" download="111_永遠的靠岸_琴箏合奏_G調原調.mp3">⬇ 下載此調 MP3</a>
+      </div>
     </div>
 
     <!-- App 下載段落 -->
-    <div class="section-title" style="margin-top: 32px;">
+    <div class="section-title" style="margin-top: 30px;">
       <span class="icon">📲</span>
       <h2>Android 手機 App 下載</h2>
     </div>
@@ -396,7 +457,7 @@
     // 複製分享文字
     document.getElementById('copyShareBtn').addEventListener('click', () => {
       const shareUrl = window.location.origin + window.location.pathname + '?openExternalBrowser=1';
-      const text = `平安！分享台語詩歌第 111 首《永遠的靠岸》琴箏合奏試聽（包含 E 調、D 調、G 調），以及最新版「我的詩歌本」App 安裝檔：\n${shareUrl}\n\n（點開網址即可直接線上試聽與下載安裝！）`;
+      const text = `平安！分享台語詩歌第 111 首《永遠的靠岸》琴箏合奏試聽（含降B大調、E調、D調、G調MP3下載），以及最新版「我的詩歌本」App 安裝檔：\n${shareUrl}\n\n（點開網址即可直接線上試聽與下載安裝！）`;
       
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(text).then(showToast);
